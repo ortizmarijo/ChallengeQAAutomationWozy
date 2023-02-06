@@ -1,4 +1,4 @@
-package starter.wikipedia;
+package swaglabs.features;
 
 import net.serenitybdd.core.pages.PageComponent;
 import net.serenitybdd.core.pages.WebElementFacade;
@@ -12,4 +12,7 @@ public class DisplayedArticle extends PageComponent {
     public String getFirstHeading() {
         return firstHeading.getText();
     }
+
+
+
 }

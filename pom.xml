@@ -62,7 +62,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M4</version>
                 <configuration>
-                    <skip>true</skip>
+                    <skip>false</skip>
                 </configuration>
             </plugin>
             <plugin>
@@ -73,7 +73,6 @@
                         <include>**/*Test.java</include>
                         <include>**/Test*.java</include>
                         <include>**/*TestSuite.java</include>
-                        <include>**/When*.java</include>
                     </includes>
                     <systemPropertyVariables>
                         <webdriver.base.url>${webdriver.base.url}</webdriver.base.url>
@@ -84,7 +83,6 @@
                     <execution>
                         <goals>
                             <goal>integration-test</goal>
-                            <goal>verify</goal>
                         </goals>
                     </execution>
                 </executions>
